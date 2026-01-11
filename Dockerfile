@@ -1,0 +1,6 @@
+FROM node
+WORKDIR /nodeapp
+COPY . .
+RUN npm install package.json
+EXPOSE 3000
+CMD ["node", "app.js"]
